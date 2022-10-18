@@ -1,7 +1,23 @@
 package pages;
 
-public class LoginPage {
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
+public class LoginPage extends BasePage{
 
+  public LoginPage(WebDriver driver) {
+      super(driver);
+
+  }
+    public void open(){
+      driver.get("https://www.saucedemo.com/");
+    }
+
+   public void  login(String login, String password){
+
+        driver.findElement(By.id("user-name")).sendKeys(login);
+     driver.findElement(By.id("password")).sendKeys(password);
+     driver.findElement(By.id("login-button")).click();
+   }
 
 }
