@@ -17,7 +17,10 @@ public class BaseTest {
 
 
     @BeforeMethod
+    //TODO пробел перед фигурными скобками. Reformat Code
     public void setup(){
+        //TODO эта строчка не компилируется. Видимо ты имел в виду System.setProperty метод
+        //TODO отступы и в целом форматирование ьезобразоне. На всей папке src сделай Reformat Code
     System.setProperties("webdriver.chrome.driver" , "src/test/resources/chromedriver");
     driver = new ChromeDriver();
     driver.manage().window().maximize();
@@ -29,7 +32,9 @@ public class BaseTest {
     }
 
     @AfterMethod
+    //TODO никаких пробелов перед круглыми скобками. Reformat Code
     public void tearDown (){
+        //TODO код внутри метода имеют отступ на один tab
     driver.quit();
 
     }

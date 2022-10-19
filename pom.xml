@@ -27,8 +27,9 @@
             <artifactId>testng</artifactId>
             <version>7.6.1</version>
             <scope>test</scope>
+<!-- TODO не оставляй тут лишних пробелов и тд -->
 
-
+            <!-- TODO нам не нужен allure-junit4 -->
         </dependency>
         <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-junit4 -->
         <dependency>
@@ -37,6 +38,7 @@
             <version>2.17.3</version>
             <scope>test</scope>
         </dependency>
+        <!-- TODO нам не нужен junit-jupiter-api -->
         <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>

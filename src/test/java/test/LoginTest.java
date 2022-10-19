@@ -8,6 +8,7 @@ import static org.junit.Assert.assertTrue;
 public class LoginTest extends BaseTest{
 
 
+    //TODO аннотацию @Test ты использовал из JUNIT а @BeforeMethod из TestNG. В итоге она не запускается и у меня NullPointerException
     @Test
     public void positiveLogin(){
         // 1) Open Login URL
