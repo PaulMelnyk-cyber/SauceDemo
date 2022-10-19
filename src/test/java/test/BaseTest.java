@@ -17,20 +17,20 @@ public class BaseTest {
 
 
     @BeforeMethod
-    public void setup(){
-    System.setProperty("webdriver.chrome.driver" , "src/test/resources/chromedriver");
-    driver = new ChromeDriver();
-    driver.manage().window().maximize();
-    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-    loginPage = new LoginPage(driver);
-    productsPage = new ProductsPage(driver);
+    public void setup() {
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver");
+        driver = new ChromeDriver();
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        loginPage = new LoginPage(driver);
+        productsPage = new ProductsPage(driver);
 
 
     }
 
     @AfterMethod
-    public void tearDown (){
-    driver.quit();
+    public void tearDown() {
+        driver.quit();
 
     }
 }
