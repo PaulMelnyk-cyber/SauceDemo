@@ -17,7 +17,7 @@ public class LoginTest extends BaseTest {
 
         loginPage.open();
         loginPage.login("standard_user", "secret_sauce");
-        assertTrue(productsPage.isOpened());
+        assertTrue(productsPage.isDisplayed());
     }
 
 }

@@ -8,7 +8,7 @@ public class ProductsPage extends BasePage {
         super(driver);
     }
 
-    public boolean isOpened() {
+    public boolean isDisplayed() {
 
         return true;
     }
