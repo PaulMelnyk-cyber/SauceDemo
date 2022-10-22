@@ -2,6 +2,7 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class LoginPage extends BasePage {
 
@@ -19,5 +20,4 @@ public class LoginPage extends BasePage {
         driver.findElement(By.id("password")).sendKeys(password);
         driver.findElement(By.id("login-button")).click();
     }
-
 }
